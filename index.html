@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI CV Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI CV Generator</h1>
+    <form id="cvForm">
+      <input type="file" id="photo" accept="image/*" required />
+      <input type="text" placeholder="Full Name" id="name" required />
+      <input type="email" placeholder="Email" id="email" required />
+      <textarea placeholder="Career Objective (Leave empty for AI to generate)" id="objective"></textarea>
+      <input type="text" placeholder="Skills (comma-separated)" id="skills">
+      <input type="text" placeholder="about you (comma-separated)" id="about you ">
+      <input type="text" placeholder="Experience (e.g. 2 years in Web Dev)" id="experience">
+      <button type="submit">Generate CV</button>
+    </form>
+
+    <div id="cvOutput" class="cv-output hidden">
+      <div class="cv-container">
+        <div class="cv-left">
+          <img id="cvPhoto" src="" alt="Profile Image" />
+        </div>
+        <div class="cv-right">
+          <h2 id="cvName"></h2>
+          <p><strong>Email:</strong> <span id="cvEmail"></span></p>
+          <p><strong>Objective:</strong> <span id="cvObjective"></span></p>
+          <p><strong>Skills:</strong> <span id="cvSkills"></span></p>
+          <p><strong>Experience:</strong> <span id="cvExperience"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
