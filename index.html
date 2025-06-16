@@ -14,8 +14,10 @@
       <input type="email" placeholder="Email" id="email" required />
       <textarea placeholder="Career Objective (Leave empty for AI to generate)" id="objective"></textarea>
       <input type="text" placeholder="Skills (comma-separated)" id="skills">
-      <input type="text" placeholder="about you (comma-separated)" id="about you ">
+      <input type="text" placeholder="About you (comma-separated)" id="about">
       <input type="text" placeholder="Experience (e.g. 2 years in Web Dev)" id="experience">
+      <input type="text" placeholder="Education (e.g. B.Tech in CSE - 2025)" id="education">
+      <input type="text" placeholder="Projects (comma-separated)" id="projects">
       <button type="submit">Generate CV</button>
     </form>
 
@@ -29,11 +31,18 @@
           <p><strong>Email:</strong> <span id="cvEmail"></span></p>
           <p><strong>Objective:</strong> <span id="cvObjective"></span></p>
           <p><strong>Skills:</strong> <span id="cvSkills"></span></p>
+          <p><strong>About:</strong> <span id="cvAbout"></span></p>
           <p><strong>Experience:</strong> <span id="cvExperience"></span></p>
+          <p><strong>Education:</strong> <span id="cvEducation"></span></p>
+          <p><strong>Projects:</strong> <span id="cvProjects"></span></p>
         </div>
       </div>
     </div>
+
+    <button id="downloadBtn" class="hidden">Download CV as PDF</button>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
