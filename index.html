@@ -21,8 +21,10 @@
       <button type="submit">Generate CV</button>
     </form>
 
+    <button id="downloadBtn" class="hidden">Download CV as PDF</button>
+
     <div id="cvOutput" class="cv-output hidden">
-      <div class="cv-container">
+      <div class="cv-container" id="cvContainer">
         <div class="cv-left">
           <img id="cvPhoto" src="" alt="Profile Image" />
         </div>
@@ -38,8 +40,6 @@
         </div>
       </div>
     </div>
-
-    <button id="downloadBtn" class="hidden">Download CV as PDF</button>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
