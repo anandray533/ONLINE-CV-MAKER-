@@ -69,3 +69,9 @@ button:hover {
 .hidden {
   display: none;
 }
+@media print {
+  .cv-container {
+    page-break-after: always;
+  }
+}
+
